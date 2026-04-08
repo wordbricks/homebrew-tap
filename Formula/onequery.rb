@@ -5,29 +5,29 @@ class Onequery < Formula
   desc "CLI for querying and self-hosting OneQuery"
   homepage "https://github.com/wordbricks/onequery"
   license "Apache-2.0"
-  version "0.1.15"
+  version "0.1.16"
 
   on_macos do
     on_arm do
-      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.15/onequery-npm-darwin-arm64.tgz"
-      sha256 "5e375672ba9885e0bdd048eedd1132819bc75b3ae275f4aa4af10b5f5b7208e4"
+      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.16/onequery-npm-darwin-arm64.tgz"
+      sha256 "8aa74b3faa55a9fd683438abddffaaec914b3955b3e64ece753684d7f58b3421"
     end
 
     on_intel do
-      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.15/onequery-npm-darwin-x64.tgz"
-      sha256 "451e40d180d18043665f6c3770e08610d09518a655ec63952ec71d4ceb5c0e82"
+      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.16/onequery-npm-darwin-x64.tgz"
+      sha256 "73b2ecc97f536033168c5d5db4a41fba077003b9d8d25b71d678683a775b9519"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.15/onequery-npm-linux-arm64.tgz"
-      sha256 "8a4e7a467e955a08c9fb1bc438161c0c9bcc3e3c3890bdc173e6d1a3b3ec3f82"
+      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.16/onequery-npm-linux-arm64.tgz"
+      sha256 "1d06ac0516d8fb4a10f7073da30555262f7f00aa9731bbbee5d018834dfaad83"
     end
 
     on_intel do
-      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.15/onequery-npm-linux-x64.tgz"
-      sha256 "ce9b4be971a20e0218727f0817f0e3afdff1c9b00d08ab04d545beb68739982f"
+      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.16/onequery-npm-linux-x64.tgz"
+      sha256 "dcaefb75149778e32417d752892768cf2d60f303446bf3c3a0def76a482f6159"
     end
   end
 
@@ -45,12 +45,11 @@ class Onequery < Formula
     end
 
     cli_binary = libexec/"vendor/#{target_triple}/onequery/onequery"
-    server_binaries = Dir[libexec/"vendor/#{target_triple}/server/*"]
 
     # COMMENT: GitHub Actions artifact downloads normalize uploaded
-    # native binaries to 0644, so Homebrew installs must restore the
+    # CLI binaries to 0644, so Homebrew installs must restore the
     # executable bit before the wrapper launches them.
-    chmod 0755, cli_binary, *server_binaries
+    chmod 0755, cli_binary
 
     (bin/"onequery").write_env_script(
       cli_binary,
