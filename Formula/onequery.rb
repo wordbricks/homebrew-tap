@@ -5,29 +5,29 @@ class Onequery < Formula
   desc "CLI for querying and self-hosting OneQuery"
   homepage "https://github.com/wordbricks/onequery"
   license "Apache-2.0"
-  version "0.1.23"
+  version "0.1.28"
 
   on_macos do
     on_arm do
-      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.23/onequery-npm-darwin-arm64.tgz"
-      sha256 "eca79bff76cdc3ff004616f4276a75ee8a4314f692e6b1adbe21b3243c5f04d4"
+      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.28/onequery-npm-darwin-arm64-0.1.28.tgz"
+      sha256 "19b4df4f86a0d5bdf2004be27ac2c4edc77f936751f07acf9de9125b9d7b1255"
     end
 
     on_intel do
-      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.23/onequery-npm-darwin-x64.tgz"
-      sha256 "ddd7e3ec649416777b69d8aa5da9b566873c4897745c07e0b9b7f224b5001ce5"
+      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.28/onequery-npm-darwin-x64-0.1.28.tgz"
+      sha256 "101f015e67324f845c4a2c1aa5cf17c8d6720d31c3db7b2e7005cf90fa7eab04"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.23/onequery-npm-linux-arm64.tgz"
-      sha256 "52abea8b91fe2ae0eb1fd759ee1b71b1c797cace98cb3fb2888c863807fcc795"
+      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.28/onequery-npm-linux-arm64-0.1.28.tgz"
+      sha256 "3047541f0c5f9d071c95f4b891384400fd4b68fad0f53aca4ede243f3213c55e"
     end
 
     on_intel do
-      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.23/onequery-npm-linux-x64.tgz"
-      sha256 "a9aae8681aa87d3fe44fdac80a84c75a361fcccf2cbe3db039cdfcd2c836909c"
+      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.28/onequery-npm-linux-x64-0.1.28.tgz"
+      sha256 "ba87160d32531767ef6f62d089d1f88d60cf9f0d20972927e851c61154f63544"
     end
   end
 
