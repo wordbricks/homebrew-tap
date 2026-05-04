@@ -5,29 +5,29 @@ class Onequery < Formula
   desc "CLI for querying and self-hosting OneQuery"
   homepage "https://github.com/wordbricks/onequery"
   license "Apache-2.0"
-  version "0.1.51-alpha.2"
+  version "0.1.51-alpha.3"
 
   on_macos do
     on_arm do
-      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.51-alpha.2/onequery-npm-darwin-arm64-0.1.51-alpha.2.tgz"
-      sha256 "ebb070a357474c73e5b525d0e8a22c8a3cc5de1c6a15de9ce1c070dac0ee63e6"
+      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.51-alpha.3/onequery-npm-darwin-arm64-0.1.51-alpha.3.tgz"
+      sha256 "156cf9104294019ea2e76dff614c09c10c89d42d01c276914a4806e28a146bfd"
     end
 
     on_intel do
-      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.51-alpha.2/onequery-npm-darwin-x64-0.1.51-alpha.2.tgz"
-      sha256 "60695c7e15219bf67a382c3cf50b6d565e2a711ea67d9c1338e28e2ca7f89648"
+      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.51-alpha.3/onequery-npm-darwin-x64-0.1.51-alpha.3.tgz"
+      sha256 "3e09f08c603e262e82b55be434ed6143bdeb9f2418ccc005a5bf0d26da5bbe69"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.51-alpha.2/onequery-npm-linux-arm64-0.1.51-alpha.2.tgz"
-      sha256 "e7f86bbe19712676bf09647acf941ba458445292b2d134e6b42f05d18ad97a06"
+      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.51-alpha.3/onequery-npm-linux-arm64-0.1.51-alpha.3.tgz"
+      sha256 "ec294fb8b268f1abc76cac69af3aad833e91190c2d0680612446a8378a114ef4"
     end
 
     on_intel do
-      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.51-alpha.2/onequery-npm-linux-x64-0.1.51-alpha.2.tgz"
-      sha256 "3e2b4eeb6feebdcd717cc18d192b463b3cc140504514825d88a311999fa1fe98"
+      url "https://github.com/wordbricks/onequery/releases/download/cli-v0.1.51-alpha.3/onequery-npm-linux-x64-0.1.51-alpha.3.tgz"
+      sha256 "1d642828c079c5201123d4d294eb674479f73d622a47413db309b2957672e179"
     end
   end
 
